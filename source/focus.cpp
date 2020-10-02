@@ -8,14 +8,16 @@ char auth[] = "******************";
 char ssid[] = "**Wifi ssid name**";
 char pass[] = "wifi pass";
 
-void setup() {
+void setup() 
+{
 	//Debug Console
 	Serial.begin(9600);
 	
 	Blynk.begin(auth, ssid, pass);
 }
 
-void loop() {
+void loop() 
+{
 	//loop control
 	Blynk.run();
 }
